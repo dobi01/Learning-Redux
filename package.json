@@ -1,0 +1,22 @@
+{
+  "name": "learning-redux",
+  "version": "1.0.0",
+  "description": "branch task-19.3 - learning actions + Flux Standard Action",
+  "main": "actions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobi01/learning-Redux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobi01/learning-Redux/issues"
+  },
+  "homepage": "https://github.com/dobi01/learning-Redux#readme",
+  "dependencies": {
+    "uuid": "^3.2.1"
+  }
+}
