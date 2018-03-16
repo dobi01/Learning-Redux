@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.App ul li {
+  list-style-type: none;
+  line-height: 1.4em;
+  font-size: 1.6em;
+}
+
+.App ul li div {
+  margin-bottom: 40px;
+}
+
+.App .votes {
+  font-size: .7em;
+}
