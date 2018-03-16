@@ -11,7 +11,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(
   reducer,
-  DevTools.instrument()
+  // DevTools.instrument()
 );
 
 const boundAddComment = text => store.dispatch(addComment(text));
