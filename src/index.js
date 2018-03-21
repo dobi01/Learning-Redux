@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import reducer from './reducer';
 import { addComment } from './actions';
-import DevTools from './DevTools';
 import registerServiceWorker from './registerServiceWorker';
+// import DevTools from './DevTools';
 
 const store = createStore(
   reducer,

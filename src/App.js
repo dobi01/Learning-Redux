@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import CommentsListContainer from './CommentsListContainer';
-import DevTools from './DevTools';
+// import DevTools from './DevTools';
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <div className="App">
          <CommentsListContainer/>
       </div>
-      <DevTools/>
+      {/* <DevTools/> */}
     </div>
   );
 };

@@ -1,10 +1,15 @@
 import React from 'react';
 import Comment from './CommentContainer';
 
-const CommentsList = ({comments, addComment}) =>
-  <div><h1>Comment of the day</h1>
+const CommentsList = ({text, comments, addComment}) =>
+  <div>
+    <h1>Comment of the day</h1>
+    <form onSubmit = {() => addComment(text)}>
+      <input type = "text" id = "text_add" value = {text} />
+      <button type= "submit" id = "btn_add">Add new comment</button>
+    </form>
     <ul>
-      {comments.map(comment => <Comment key={comment.id} {...comment}/>)}
+      {comments.map(comment => <Comment key = {comment.id} {...comment}/>)}
     </ul>
 </div>;
 
