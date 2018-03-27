@@ -7,7 +7,13 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  addComment: (text) => dispatch(addComment(text))
+  addComment: (event, text) => {
+    event.preventDefault();
+
+    let inputValue = text.newComment.value;
+
+    dispatch(addComment(inputValue))
+  }
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CommentsList);
